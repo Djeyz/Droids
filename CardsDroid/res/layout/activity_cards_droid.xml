@@ -4,12 +4,32 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="132dp"
         android:padding="@dimen/padding_medium"
         android:text="@string/hello_world"
         tools:context=".CardsDroidActivity" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="142dp"
+        android:layout_marginLeft="21dp"
+        android:onClick="performBtnHandler"
+        android:src="@drawable/as_de_pic" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
 
 </RelativeLayout>
