@@ -19,28 +19,32 @@ public class Card {
 	 */
 	
 	
-	private string s_imgSrcPath; 	// chemin vers l'image
-	protected string s_id; 			// Identifiant
-	protected string s_nom; 			// Nom de la carte
-	protected ImageButton btn;
-
+	protected Integer s_imgSrcPath; 	// chemin vers l'image
+	protected String s_id; 			// Identifiant
+	protected String s_nom; 			// Nom de la carte
+	
+	
 	/*	A convertir en abstract class par la suite 	*/
-	public Card(Context context, string path, string id, string nom)
+	public Card(Integer path, String id, String nom)
 	{
-		this.setS_imgSrcPath(path);
+		this.s_imgSrcPath = path;
 		this.s_id = id;
 		this.s_nom = nom;
 		
-		 btn = new ImageButton(context);
-		
+	}
+	
+	
+	
+	public String getS_id() {
+		return s_id;
 	}
 
-	protected string getS_imgSrcPath() {
+	public String getS_nom() {
+		return s_nom;
+	}
+
+	public Integer getS_imgSrcPath() {
 		return s_imgSrcPath;
-	}
-
-	protected void setS_imgSrcPath(string s_imgSrcPath) {
-		this.s_imgSrcPath = s_imgSrcPath;
 	}
 
 }

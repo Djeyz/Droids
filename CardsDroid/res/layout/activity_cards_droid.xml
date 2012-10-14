@@ -3,12 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+<!--     <Gallery -->
+<!--         android:id="@+id/gallery1" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_marginTop="72dp" /> -->
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="57dp"
+        android:layout_marginLeft="47dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:id="@+id/horizontalScrollViewLayout1"
+            >
+        </LinearLayout>
+    </HorizontalScrollView>
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
         android:padding="@dimen/padding_medium"
         android:text="@string/hello_world"
         tools:context=".CardsDroidActivity" />
@@ -17,19 +42,12 @@
         android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="142dp"
-        android:layout_marginLeft="21dp"
+        android:layout_alignLeft="@+id/horizontalScrollView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="84dp"
         android:onClick="performBtnHandler"
-        android:src="@drawable/as_de_pic" />
-
-    <Gallery
-        android:id="@+id/gallery1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp" />
+        android:background="@drawable/as_de_pic"
+         />
+<!--     android:src="@drawable/as_de_pic" -->
 
 </RelativeLayout>
