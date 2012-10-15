@@ -32,10 +32,21 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/horizontalScrollView1"
         android:padding="@dimen/padding_medium"
         android:text="@string/hello_world"
         tools:context=".CardsDroidActivity" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/GridLayout1"
+        android:id="@+id/deckContainer" />
+
 
 </RelativeLayout>
